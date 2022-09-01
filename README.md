@@ -1,1 +1,1 @@
-# SORTS-C++-
+# SORTS in C++
