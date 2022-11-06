@@ -13,7 +13,7 @@ void bubble(int arr[],int s)
     {
         for(int j=0;j<s-i-1;j++)        
         {
-            // check if current and its next elements
+            // if current element is greater than its next elements, then swap them
             if(arr[j]>arr[j+1])
             {
                 swap(arr[j],arr[j+1]);
