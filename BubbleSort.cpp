@@ -8,21 +8,20 @@ using namespace std;
 
 void bubble(int arr[],int s)
 {
-    int count=0;                    // to count no of iterations
     int swaps=0;
     for(int i=0;i<s-1;i++)          
     {
         for(int j=0;j<s-i-1;j++)        
         {
-            count++;
+            // check if current and its next elements
             if(arr[j]>arr[j+1])
             {
                 swap(arr[j],arr[j+1]);
-                swaps++;
+                swaps++;                // counting total no. of swaps
             }
         }
     }
-    cout<<endl<<"Iterations :"<<count<<endl<<"No of swaps : "<<swaps<<endl;
+    cout<<endl<<"No of swaps : "<<swaps<<endl;
 }
 void print(int arr[],int s)
 {
