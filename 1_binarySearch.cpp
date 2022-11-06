@@ -9,26 +9,26 @@ int binarySearch(int arr[],int key,int size)
 
     while(start<=end)
     {
-        if(arr[mid]==key)
+        if(arr[mid]==key)           // if element is found at any index in array
         {
             
             return mid;
         }
         else
         {
-            if(arr[mid]<key)
+            if(arr[mid]<key)        // element is present in first half of array
             {
-                start=mid+1;
+                start=mid+1;        
             }
             else
             {
-                end=mid-1;
+                end=mid-1;          // element is present in right half of array
             }
         }
         mid=start+(end-start)/2;
     }
     
-    return -1;
+    return -1;                      // if element is absent return -1
 }
 
 int main()
