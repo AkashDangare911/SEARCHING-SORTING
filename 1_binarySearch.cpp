@@ -11,7 +11,7 @@ int binarySearch(int arr[],int key,int size)
     {
         if(arr[mid]==key)
         {
-            cout<<key<<" is Found at index : ";
+            
             return mid;
         }
         else
@@ -37,13 +37,13 @@ int main()
     int s=sizeof(arr)/sizeof(arr[0]);
     int key=4;
 
-    int ans=binarySearch(arr,key,5);
+    int ans=binarySearch(arr,key,s);
 
     if(ans==-1){
-        cout<<"Element is not present in array . ";
+        cout<<"Element is not present in the array . ";
     }
     else{
-        cout<<ans;
+        cout<<key<<" is Found at index : "<<ans;
     }
     return 0;
 }
